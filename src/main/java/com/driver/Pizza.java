@@ -36,20 +36,20 @@ public class  Pizza {
     public void addExtraCheese(){
         if(!isExtraCheeseAdded){
             this.price += 80;
-            isExtraCheeseAdded = true;
+            this.isExtraCheeseAdded = true;
         }
     }
 
     public void addExtraToppings(){
         if(!isExtraToppingsAdded){
             this.price += this.toppings;
-            isExtraToppingsAdded = true;
+            this.isExtraToppingsAdded = true;
         }
     }
     public void addTakeaway(){
         if(!isTakeAway){
             this.price += 20;
-            isTakeAway = true;
+            this.isTakeAway = true;
         }
     }
 
@@ -64,7 +64,7 @@ public class  Pizza {
             if (isTakeAway) {
                 this.bill += "Paperbag Added: 20" + "\n";
             }
-            this.bill += "Total Price: " + this.price;
+            this.bill += "Total Price: " + this.price+"\n";
             this.isBillCreated = true;
             return this.bill;
         }
