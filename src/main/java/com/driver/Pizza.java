@@ -26,7 +26,7 @@ public class  Pizza {
         this.isExtraToppingsAdded = false;
         this.isTakeAway = false;
 
-        this.bill = "Base Price of Pizza: "+this.price+"\n";
+        this.bill = "Base Price of The Pizza: "+this.price+"\n";
     }
 
     public int getPrice(){
